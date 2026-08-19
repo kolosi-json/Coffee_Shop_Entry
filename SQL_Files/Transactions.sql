@@ -20,6 +20,8 @@ VALUES (1001, 102, 2),
 
 	--Code For the Total Amount of Purchase Each Item--
 
+	--The client noted to keep track on her transactions in order for me to notify her regarding with the best selling items.--
+
 SELECT Menu.item_name, COUNT(Menu.item_name) AS 'Number of Items Bought Each Item'
 FROM Transactions
 INNER JOIN Menu ON Menu.item_id = Transactions.item_id
