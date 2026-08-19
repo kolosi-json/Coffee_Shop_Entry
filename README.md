@@ -9,4 +9,4 @@ As for our first project, we focus more on getting to know our customers and wha
 
 As you can see the SQL_Files folder, it contains important files regarding with Customers, Menu, and Transactions. 
 
-I use Transactions file as the gateway bridge to connect Customers and Menu files by using JOINs and GROUP BY commands, to monitor what items in the menu customers purchase.
+I use Transactions file as the gateway bridge to connect Customers and Menu files by using JOINs and GROUP BY commands, to monitor what items in the menu customers purchase. In the near future, we can build and organize new files for future needs like calculating the average sales of items, finding out who is our most loyal customer(in case client want to reward them a promo), etc.
