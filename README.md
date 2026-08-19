@@ -5,7 +5,8 @@ My client provided me full details about her newly opened cafe, and she required
 
 As for our first project, we focus more on getting to know our customers and what items they usually purchase, and to prioritize what ingredients should she always have on stock. Potentially, we can use the most favourite item as opportunity to market it and to recommend it for newer customers.
 
-#How Do I Utilize SQL To Solve and Manage Business Challenges and Responsibilities
+**#How Do I Utilize SQL To Solve and Manage Business Challenges and Responsibilities**
+
 As you can see the SQL_Files folder, it contains important files regarding with Customers, Menu, and Transactions. 
 
 I use Transactions file as the gateway bridge to connect Customers and Menu files by using JOINs and GROUP BY commands, to monitor what items in the menu customers purchase.
