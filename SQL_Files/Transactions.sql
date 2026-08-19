@@ -12,6 +12,8 @@ CREATE TABLE Transactions (
   	REFERENCES Menu(item_id)
 	);
 
+INSERT INTO Transactions
+
 --Code For the Total Amount of Purchase Each Item--
 
 SELECT Menu.item_name, COUNT(Menu.item_name) AS 'Number of Items Bought'
