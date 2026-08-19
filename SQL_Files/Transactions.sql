@@ -23,7 +23,7 @@ VALUES (1001, 102, 2),
 	--The client noted to keep track on her transactions in order for me to notify her regarding with the best selling items.-- 
 	-- I recommended the client to prioritize stocking ingredients which are the recipes for the most sold item.--
 
-SELECT Menu.item_name, COUNT(Menu.item_name) AS 'Number of Items Bought Each Item'
+SELECT Menu.item_name AS Items, COUNT(Menu.item_name) AS 'Number of Items Bought Each Item'
 FROM Transactions
 INNER JOIN Menu ON Menu.item_id = Transactions.item_id
 GROUP BY Menu.item_name
