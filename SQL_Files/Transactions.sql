@@ -4,19 +4,19 @@ CREATE TABLE Transactions (
   		item_id INT,
   
  	  CONSTRAINT fk_customer
-  	FOREIGN KEY (customer_id)
-  	REFERENCES Customers(customer_id),
+  	  FOREIGN KEY (customer_id)
+  	  REFERENCES Customers(customer_id),
   
 	  CONSTRAINT fk_item
-  	FOREIGN KEY (item_id)
-  	REFERENCES Menu(item_id)
+  	  FOREIGN KEY (item_id)
+  	  REFERENCES Menu(item_id)
 	);
 
 INSERT INTO Transactions (transaction_id, customer_id, item_id)
 VALUES (1001, 102, 2),
-	(1002, 103, 2),
-	(1003, 101, 3),
-	(1004, 103, 1)
+	   (1002, 103, 2),
+	   (1003, 101, 3),
+	   (1004, 103, 1)
 
 	--Code For the Total Amount of Purchase Each Item--
 
