@@ -12,11 +12,15 @@ CREATE TABLE Transactions (
   	REFERENCES Menu(item_id)
 	);
 
-INSERT INTO Transactions
+INSERT INTO Transactions (transaction_id, customer_id, item_id)
+VALUES (1001, 102, 2),
+	(1002, 103, 2),
+	(1003, 101, 3),
+	(1004, 103, 1)
 
---Code For the Total Amount of Purchase Each Item--
+	--Code For the Total Amount of Purchase Each Item--
 
-SELECT Menu.item_name, COUNT(Menu.item_name) AS 'Number of Items Bought'
+SELECT Menu.item_name, COUNT(Menu.item_name) AS 'Number of Items Bought Each Item'
 FROM Transactions
 INNER JOIN Menu ON Menu.item_id = Transactions.item_id
 GROUP BY Menu.item_name
